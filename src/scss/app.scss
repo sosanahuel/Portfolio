@@ -1,0 +1,16 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+
+
+//UI
+
+@import 'layout/header';
+@import 'layout/nombre';
+@import 'layout/footer';
+@import 'layout/sobremi';
+@import 'layout/habilidades';
+@import 'layout/proyectos';
+@import 'layout/contacto';

@@ -1,0 +1,115 @@
+.contenedor_nombre {
+    margin-bottom: 15rem;
+}
+
+.contenido-header {
+    
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 13rem;
+    text-align: center;
+
+    h1{
+        font-size: 6rem;
+            margin-top: -5rem;
+    }
+
+    ul {
+        display: flex;
+        gap: 3.5rem;
+        margin-top:2rem;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            margin-top: 1rem;
+        }
+    }
+    
+    li {
+        margin: 1rem;
+        width: 5rem;
+        height: 5rem;
+        p {
+            display: none;
+        }
+
+        &:hover p {
+            filter: brightness(1.9);
+            display: block; 
+            width: 4rem;
+            text-align: center;
+            font-size: 1.3rem;            
+        }    
+    }
+    
+    img {
+        &:hover {
+            width: 4.1rem;
+            filter: brightness(1.9); 
+        }
+
+    }
+    .autotype{
+        color: $secundario;
+    }
+
+    .typed-cursor {
+        color: $cuadros;
+    }
+    
+    
+}
+
+/*BOTON*/
+.nombre_botones {
+    display: flex;
+    height: 10rem;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.boton {
+
+    background-color: $cuadros;
+    min-width: 16rem;
+    color: $bg-color;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    border: none;
+    font-size: 1.3rem;
+    padding: 1.8rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+
+    &:hover {
+        font-size: 1.51rem;
+        cursor: pointer;
+        filter: brightness(1.1);
+    }
+}
+
+@media (max-width:830px) {
+    .contenido-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        gap:0;
+        h1,h3, p {
+            text-align: center;
+        }
+    }
+
+    .boton {
+        background-color: $cuadros;
+        color: $bg-color;
+        text-transform: uppercase;
+        border: none;
+        font-size: 1.5rem;
+        padding: 1.8rem;
+        margin:1rem auto;
+        border-radius: 1rem;
+    }
+}

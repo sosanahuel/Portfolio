@@ -1,0 +1,63 @@
+.habilidades {
+    padding: 8rem 0;
+    h3 {
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    li {
+        margin: 1rem;
+        width: 11rem;
+        height: 14rem;
+        
+        p {
+            display: block; 
+            width: 10rem;
+            text-align: center;
+            font-size: 1.3rem;
+            
+        }
+
+        &:hover p{
+            font-size: 1.5rem;
+            filter: brightness(1.9);
+        }    
+
+        &:hover img {
+            filter: brightness(1.1);
+            width: 11rem;
+            height: 11rem;
+        }
+    }
+}
+
+
+
+@media (max-width:1060px) {
+    .habilidades {
+        ul {
+            margin: 0 20%;
+            @include grid (2, 1rem);
+            
+        }
+    }
+}
+@media (max-width:397px) {
+    .habilidades {
+        ul {
+          margin: 0;
+            
+        }
+    }
+}

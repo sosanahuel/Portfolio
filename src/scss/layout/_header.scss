@@ -1,0 +1,162 @@
+header {
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Menu hamburguesa*/
+.menu-hamb {
+    display: none;
+}
+
+/*NAV*/
+.estilo {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 1px solid $cuadros;
+    margin-right: 20%;
+    margin-left: 20%;
+    transition: all .5 ease;
+
+    .inicio {
+        display: none;
+    }
+
+    a {
+        color: $secundario;
+        font-size: 2rem;
+    }
+
+    a:hover {
+        filter: brightness(1.9);
+    }
+
+}
+
+nav.navegacion-header.abajo {
+    background: $bg-color-suave;
+    box-shadow: .1rem .2rem .3rem #222;
+    padding: 1rem;
+    border-bottom: 0px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 9000;
+
+    a:hover {
+        filter: brightness(1.9);
+    }
+
+    .inicio {
+        display: block;
+    }
+}
+
+/*navegador 2*/
+
+.nav2 {
+    display: none;
+}
+
+
+.abc {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+.menu-hamb {
+    display: none;
+    padding: .5rem;
+
+    img {
+        width: 4.5rem;
+    }
+}
+
+.cerrar {
+    display: none;
+
+    img {
+        width: 6rem;
+    }
+}
+
+
+@media (max-width:860px) {
+
+    //El otro nav
+    .nav-h {
+        display: none;
+    }
+
+    .estilo {
+        border-bottom: 0;
+    }
+
+    //NUEVO NAV
+
+    .nav2 {
+        display: block;
+        background: $bg-color;
+        width: 5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-hamb,
+    .cerrar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navsi {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .navsi {
+        background: $bg-color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $bg-color-suave;
+        gap: .5rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+
+
+        .nav-lista {
+            flex-direction: column;
+            border-bottom: 0px;
+            align-items: end;
+
+            .inicio {
+                display: block;
+            }
+        }
+    }
+
+    .visible {
+        opacity: 1;
+        visibility: visible;
+        padding: 0rem 0rem 1rem 4rem;
+        border-radius: 0 0 0rem 7rem;
+    }
+
+    .slideIn {
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .slideIn.visible {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}

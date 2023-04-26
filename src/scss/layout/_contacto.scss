@@ -1,0 +1,27 @@
+.contacto {
+    
+    a {
+        color: lightblue;
+        font-size: 1.5rem;
+        gap: .5rem;
+    }
+
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    p {
+        color: lightblue;
+        font-size: 1.5rem;
+    }
+
+    li {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: .5rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+}

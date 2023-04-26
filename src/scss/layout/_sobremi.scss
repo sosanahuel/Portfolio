@@ -1,0 +1,37 @@
+.sobremi {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+
+.sobremi_texto {
+    width: 50%;
+}
+
+.img-sobremi {
+    img {
+        width: 30rem;
+    }
+}
+
+@media (max-width:860px) {
+    .sobremi {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+
+        .sobremi_texto {
+            width: 80%;
+        }
+
+        .img-sobremi{
+            img{
+                width: 30rem;
+                margin: 0 auto;
+            }
+        }
+    }
+}
